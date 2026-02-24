@@ -115,7 +115,7 @@ services:
   databasus:
     container_name: databasus
     # image: databasus/databasus:latest
-    build: .
+    image: akhilmp99/databasus-new:latest
     ports:
       - "4005:4005"
     volumes:
