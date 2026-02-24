@@ -114,7 +114,8 @@ cat > "$INSTALL_DIR/docker-compose.yml" << 'EOF'
 services:
   databasus:
     container_name: databasus
-    image: databasus/databasus:latest
+    # image: databasus/databasus:latest
+    build: .
     ports:
       - "4005:4005"
     volumes:
